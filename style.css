@@ -67,9 +67,14 @@ a {
 .home {
   display: flex;
   align-items: center;
+  gap: 50px;
   height: 100vh;
   padding: 60px 9%;
   color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  animation: show-content 1.5s linear forwards;
+  animation-delay: 1.6s;
 }
 
 .home-info h1 {
