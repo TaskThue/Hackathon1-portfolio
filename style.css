@@ -21,7 +21,6 @@ body {
   top: 0;
   width: 100%;
   padding: 25px 9%;
-  background: slateblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,4 +50,30 @@ body {
  .navbar ul li:hover a,
  .navbar ul li.active a{
   color: #7cf03d;
+ }
+
+ .home {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 9%;
+  color: #fff;
+ }
+
+ .home-info h1{
+  font-size: 55px;
+ }
+
+ .home-info h2{
+  font-size: 32px;
+  margin-top: -18px;
+ }
+
+ .home-info p{
+  font-size: 16px;
+  margin: 10px 0 25px;
+ }
+
+ .home-info .btn-sci {
+  display: flex;
  }
