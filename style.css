@@ -45,4 +45,9 @@ body {
  .navbar ul li a{
   font-size: 20px;
   font-weight: 500;
+  transition: .5s;
+ }
+
+ .navbar ul li:hover a{
+  color: #7cf03d;
  }
