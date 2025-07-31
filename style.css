@@ -31,13 +31,12 @@ a {
   animation-delay: 1.2s;
 }
 
-@keyframes show-content{
-  100%{
+@keyframes show-content {
+  100% {
     visibility: visible;
     opacity: 1;
   }
 }
-
 
 .navbar .logo {
   font-size: 30px;
@@ -82,8 +81,24 @@ a {
 }
 
 .home-info h2 {
+  display: inline-block;
   font-size: 32px;
-  margin-top: -18px;
+  margin-top: -10px;
+}
+
+.home-info h2 span {
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 0.7px #7cf03d;
+  /*animation: display-text 16s linear infinite;*/
+  animation-delay: calc(-4s * var(--i));
+}
+
+@keyframes display-text {
+  25%,
+  100% {
+    display: none;
+  }
 }
 
 .home-info p {
@@ -193,9 +208,8 @@ a {
   background: #1f242d;
   transform: translateY(-100%);
   animation: show-bars.5s ease-in-out forwards;
-  animation-delay: calc(.1s * var(--i));
+  animation-delay: calc(0.1s * var(--i));
 }
-
 
 @keyframes show-bars {
   100% {
